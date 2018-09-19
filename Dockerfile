@@ -3,11 +3,11 @@ WORKDIR /app
 
 # copy csproj and restore as distinct layers
 #COPY *.sln .
-COPY web/*.csproj ./web/
+COPY src/web/*.csproj ./web/
 RUN dotnet restore web
 
 # copy everything else and build app
-COPY web/. ./web/
+COPY src/web/. ./web/
 WORKDIR /app/web
 RUN dotnet publish -c Release -o out
 
