@@ -1,5 +1,6 @@
 {
     "public": true,
+    "alias": "arildzeit",
     "features": {
         "cloud": "v2"
     }
