@@ -1,6 +1,6 @@
 using System;
 
-namespace caphub.Models
+namespace zeit.Models
 {
     public class ErrorViewModel
     {
