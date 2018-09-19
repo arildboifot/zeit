@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <CrossGenDuringPublish>false</CrossGenDuringPublish>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <LinkerRootAssemblies Include="Microsoft.AspNetCore.Mvc.Razor.Extensions;Microsoft.Extensions.FileProviders.Composite;Microsoft.Extensions.Primitives;Microsoft.AspNetCore.Diagnostics.Abstractions" />
+  </ItemGroup> 
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>
